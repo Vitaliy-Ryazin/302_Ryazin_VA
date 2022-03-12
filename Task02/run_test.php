@@ -1,6 +1,6 @@
-<?php 
-    require_once('Fraction.php');
-    require_once('Test.php');
+<?php
 
-    runTest(); 
-?>
+require_once('Fraction.php');
+require_once('Test.php');
+
+run_test();
