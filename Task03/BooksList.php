@@ -23,7 +23,7 @@ class BooksList
 
     public function store(string $fileName)
     {
-        file_put_contents($fileName, serialize($this -> books));
+        file_put_contents($fileName, serialize($this->books));
     }
 
     public function load(string $fileName)
@@ -32,6 +32,6 @@ class BooksList
             return "Файл " . $fileName . " не существует!";
         }
 
-        $this -> books = unserialize(file_get_contents($fileName));
+        $this->books = unserialize(file_get_contents($fileName));
     }
 }

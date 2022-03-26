@@ -9,10 +9,10 @@ class Book
     private $Publisher;
     private $Year;
 
-    public function __construct($Title="", $Authors=array(), $Publisher="", $Year=0 )
+    public function __construct($Title = "", $Authors = array(), $Publisher = "", $Year = 0)
     {
         $this->id = self::$lastId++;
-		$this->setTitle($Title)->setAuthors($Authors)->setPublisher($Publisher)->setYear($Year);
+        $this->setTitle($Title)->setAuthors($Authors)->setPublisher($Publisher)->setYear($Year);
     }
 
     public function setTitle($Title): Book
@@ -73,13 +73,8 @@ class Book
         $AuthorsArray = $this->Authors;
         $Authors = "";
         for ($i = 0; $i < count($AuthorsArray); $i++) {
-            $Authors .= "Автор" . ($i + 1) . ": " . $AuthorsArray[$i] . PHP_EOL;
+            $Authors .= "Автор " . ($i + 1) . ": " . $AuthorsArray[$i] . PHP_EOL;
         }
-
-        return "Id: {$this->id}" . PHP_EOL .
-            "Название: {$this->Title}" . PHP_EOL .
-            $Authors .
-            "Издательство: {$this->Publisher}" . PHP_EOL .
-            "Год: {$this->Year}" . PHP_EOL;
+        return "Id: $this->id" . PHP_EOL . "Название: $this->Title" . PHP_EOL . $Authors . "Издательство: $this->Publisher" . PHP_EOL . "Год: $this->Year" . PHP_EOL;
     }
 }
