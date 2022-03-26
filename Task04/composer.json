@@ -2,11 +2,11 @@
     "name": "rmvit/task04",
     "autoload": {
         "psr-4": {
-            "Rmvit\\Task04\\": "src/"
+            "Rodushkinve\\Task04\\": "src/"
         },
         "files": [
             "src/Test.php", 
-            "src/CompareStrings.php"
+            "src/compareStrings.php"
         ]
     },
     "authors": [
