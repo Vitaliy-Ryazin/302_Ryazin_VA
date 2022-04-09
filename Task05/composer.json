@@ -1,0 +1,19 @@
+{
+    "name": "Rmvit/task05",
+    "autoload": {
+        "psr-4": {
+            "Rmvit\\Task05\\": [
+                "src/",
+                "tests/Unit/"
+            ]
+        },
+        "files": ["src/Test.php"]
+    },
+    "authors": [{
+        "name": "Vitaliy-Ryazin",
+        "email": "rmvitaliy@yandex.ru"
+    }],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
