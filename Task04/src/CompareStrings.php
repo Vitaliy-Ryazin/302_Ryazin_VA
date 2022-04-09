@@ -2,7 +2,7 @@
 
 namespace rmvit\task04;
 
-function compareStrings(string $str1, string $str2): bool
+function compareStrings(string $str1, string $str2)
 {
     $stack1 = new Stack();
     $stack2 = new Stack();
@@ -24,8 +24,8 @@ function compareStrings(string $str1, string $str2): bool
     }
 
     if ($stack1->__toString() == $stack2->__toString()) {
-        return true;
+        return "TRUE";
     } else {
-        return false;
+        return "FALSE";
     }
 }

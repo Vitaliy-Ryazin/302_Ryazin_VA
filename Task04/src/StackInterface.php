@@ -16,3 +16,4 @@ interface StackInterface
 
     public function __toString(): string;
 }
+

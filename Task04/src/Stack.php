@@ -55,7 +55,7 @@ class Stack implements StackInterface
             if ($i == 0) {
                 $arrow = "";
             }
-            $string = $string.$this->stack[$i].$arrow;
+            $string = $string . $this->stack[$i] . $arrow;
         }
         $string .= "]";
 
