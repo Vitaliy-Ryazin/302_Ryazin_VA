@@ -1,10 +1,10 @@
 <?php
 
-namespace Rmvit\Tests;
+namespace rmvit\Tests;
 use \PHPUnit\Framework\TestCase;
-use Rmvit\Task05\Truncater;
+use rmvit\Task05\Truncater;
 
-class TruncaterTest extends TestCase
+class TruncaterTest extends TestCasep
 {
     
     /** @test */
